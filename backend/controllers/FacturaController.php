@@ -24,6 +24,7 @@ class FacturaController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['POST'],
+                    
                 ],
             ],
         ];

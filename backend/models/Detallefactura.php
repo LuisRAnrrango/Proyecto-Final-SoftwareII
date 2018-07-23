@@ -45,7 +45,7 @@ class Detallefactura extends \yii\db\ActiveRecord
     {
         return [
             'IDDETALLEFACTURA' => 'Código Detalle',
-            'IDPRODUCTO' => 'Código Producto',
+            'IDPRODUCTO' => 'Código Productos',
             'CANTIDAD' => 'Cantidad',
             'TOTAL' => 'Total',
         ];
