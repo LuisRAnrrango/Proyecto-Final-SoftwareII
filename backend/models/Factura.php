@@ -54,13 +54,13 @@ class Factura extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'IDFACTURA' => 'Idfactura',
-            'IDCLIENTE' => 'Idcliente',
-            'IDCAJERO' => 'Idcajero',
-            'IDDETALLEFACTURA' => 'Iddetallefactura',
-            'FECHAFACTURA' => 'Fechafactura',
-            'NUMEROFACTURA' => 'Numerofactura',
-            'TOTALFACTURA' => 'Totalfactura',
+            'IDFACTURA' => 'Código Factura',
+            'IDCLIENTE' => 'Cliente',
+            'IDCAJERO' => 'Codigo Cajero',
+            'IDDETALLEFACTURA' => 'Codigo Detalle',
+            'FECHAFACTURA' => 'Fecha',
+            'NUMEROFACTURA' => 'Numero Factura',
+            'TOTALFACTURA' => 'Total',
             'ESTADO' => 'Estado',
         ];
     }

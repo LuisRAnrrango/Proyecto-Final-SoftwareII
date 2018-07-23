@@ -2,7 +2,9 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-
+use yii\helpers\ArrayHelper;
+use backend\models\Cliente;
+use backend\models\Cajeros;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Factura */
 /* @var $form yii\widgets\ActiveForm */
@@ -12,9 +14,15 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'IDCLIENTE')->textInput() ?>
 
-    <?= $form->field($model, 'IDCAJERO')->textInput() ?>
+      
+    <?= $form->field($model, 'IDCLIENTE')->dropDownList(
+    ArrayHelper::map(Cliente::find()->all(), 'IDCLIENTE', 'NOMBRES'),
+            ['promt'=>'Select CLIENTE']) ?>
+
+    <?= $form->field($model, 'IDCAJERO')->dropDownList(
+    ArrayHelper::map(Cajeros::find()->all(), 'IDCAJERO', 'NOMBRES'),
+            ['promt'=>'Select CAJERO']) ?>
 
     <?= $form->field($model, 'IDDETALLEFACTURA')->textInput() ?>
 

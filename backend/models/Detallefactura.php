@@ -44,8 +44,8 @@ class Detallefactura extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'IDDETALLEFACTURA' => 'Iddetallefactura',
-            'IDPRODUCTO' => 'Idproducto',
+            'IDDETALLEFACTURA' => 'Código Detalle',
+            'IDPRODUCTO' => 'Código Producto',
             'CANTIDAD' => 'Cantidad',
             'TOTAL' => 'Total',
         ];

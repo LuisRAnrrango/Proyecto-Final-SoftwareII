@@ -29,14 +29,19 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+        'brandLabel' => 'Sistema de Facturación',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar-default navbar-fixed-top',
         ],
     ]);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
+        ['label' => 'Factura', 'url' => ['/factura/index']],
+        ['label' => 'Detalle', 'url' => ['/detallefactura/index']],
+        ['label' => 'Productos', 'url' => ['/producto/index']],
+        ['label' => 'Clientes', 'url' => ['/cliente/index']],
+        ['label' => 'Cajeros', 'url' => ['/cajeros/index']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];

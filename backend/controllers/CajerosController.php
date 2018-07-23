@@ -64,6 +64,8 @@ class CajerosController extends Controller
      */
     public function actionCreate()
     {
+        if(Yii::$app->user->can('create-cajeros')){
+        
         $model = new Cajeros();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -73,6 +75,11 @@ class CajerosController extends Controller
         return $this->render('create', [
             'model' => $model,
         ]);
+        }else{
+            throw new ForbiddenHttpException;
+            
+         
+        }
     }
 
     /**

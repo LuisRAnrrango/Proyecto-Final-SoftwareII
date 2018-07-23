@@ -50,15 +50,15 @@ class Cliente extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'IDCLIENTE' => 'Idcliente',
-            'CEDULARUC' => 'Cedularuc',
+            'IDCLIENTE' => 'Codigo',
+            'CEDULARUC' => 'Cedula o Ruc',
             'NOMBRES' => 'Nombres',
             'APELLIDOS' => 'Apellidos',
-            'FECHANACIMIENTO' => 'Fechanacimiento',
-            'CIUDADNACIMIENTO' => 'Ciudadnacimiento',
-            'TIPOCLIENTE' => 'Tipocliente',
-            'DIRECCION' => 'Direccion',
-            'TELEFONO' => 'Telefono',
+            'FECHANACIMIENTO' => 'Fecha Nacimiento',
+            'CIUDADNACIMIENTO' => 'Ciudad Nacimiento',
+            'TIPOCLIENTE' => 'Tipo Cliente',
+            'DIRECCION' => 'Dirección',
+            'TELEFONO' => 'Teléfono',
             'EMAIL' => 'Email',
             'ESTADO' => 'Estado',
         ];
