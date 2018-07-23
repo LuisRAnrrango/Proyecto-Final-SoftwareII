@@ -56,7 +56,7 @@ class Cliente extends \yii\db\ActiveRecord
             'APELLIDOS' => 'Apellidos',
             'FECHANACIMIENTO' => 'Fecha Nacimiento',
             'CIUDADNACIMIENTO' => 'Ciudad Nacimiento',
-            'TIPOCLIENTE' => 'Tipo Cliente',
+            'TIPOCLIENTE' => 'Tipo Clientes',
             'DIRECCION' => 'Dirección',
             'TELEFONO' => 'Teléfono',
             'EMAIL' => 'Email',

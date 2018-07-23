@@ -8,6 +8,7 @@ use backend\models\Search\CajerosSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\ForbiddenHttpException;
 
 /**
  * CajerosController implements the CRUD actions for Cajeros model.
