@@ -48,9 +48,6 @@ $this->title = 'My Yii Application';
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
             </div>
         </div>
-        <h2> Prueba commit </h2>
-        <h2> Prueba commit 2</h2>
-        <h2> Prueba commit HenryF</h2>
-         <h2> Prueba commit LUIS</h2>
+      
     </div>
 </div>
