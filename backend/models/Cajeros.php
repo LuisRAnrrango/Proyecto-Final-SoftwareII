@@ -57,7 +57,7 @@ class Cajeros extends \yii\db\ActiveRecord
             'CIUDADNACIMIENTO' => 'Ciudad Nacimiento',
             'DIRECCION' => 'Dirección',
             'TELEFONO' => 'Teléfono',
-            'EMAIL' => 'Emailsss',
+            'EMAIL' => 'Email',
             'ESTADO' => 'Estado',
         ];
     }
