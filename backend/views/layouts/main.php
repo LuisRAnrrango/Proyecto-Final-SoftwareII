@@ -38,7 +38,7 @@ AppAsset::register($this);
     $menuItems = [
         ['label' => 'Home', 'url' => ['/site/index']],
         ['label' => 'Factura', 'url' => ['/factura/index']],
-        ['label' => 'Detalle', 'url' => ['/detallefactura/index']],
+        ['label' => 'Detalle Facturas', 'url' => ['/detallefactura/index']],
         ['label' => 'Productos', 'url' => ['/producto/index']],
         ['label' => 'Clientes', 'url' => ['/cliente/index']],
         ['label' => 'Cajeros', 'url' => ['/cajeros/index']],
