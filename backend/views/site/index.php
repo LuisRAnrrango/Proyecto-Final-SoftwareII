@@ -49,6 +49,6 @@ $this->title = 'My Yii Application';
             </div>
         </div>
                 <h2>mony</h2>
-                <h2>Henry</h2>
+                <h2>Henry F</h2>
     </div>
 </div>
