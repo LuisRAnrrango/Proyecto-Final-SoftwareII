@@ -31,8 +31,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'IDDETALLEFACTURA',
             'FECHAFACTURA',
             'NUMEROFACTURA',
-            //'TOTALFACTURA',
-            //'ESTADO',
+            'TOTALFACTURA',
+            'ESTADO',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
