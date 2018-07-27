@@ -30,8 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'IDCAJERO',
             'IDDETALLEFACTURA',
             'FECHAFACTURA',
-            'TOTALFACTURA',
-            //'NUMEROFACTURA',
+            'NUMEROFACTURA',
             //'TOTALFACTURA',
             //'ESTADO',
 
