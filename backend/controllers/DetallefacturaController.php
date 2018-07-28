@@ -59,19 +59,14 @@ class DetallefacturaController extends Controller
     }
     
     
-     public function actionGenPdf($id)
+     public function actionGenPdf()
     {
-         
-        $pdf_content = $this->renderPartial('view-pdf', [
-            'model' => $this->findModel($id),
-        ]);
+        $pdf_content = $this->renderPartial($view);
         $mpdf = new \Mpdf\Mpdf();
         $mpdf-> WriteHTML($pdf_content);
         $mpdf -> Output();
-        exit;
+        exit; 
     }
-    
-
     /**
      * Creates a new Detallefactura model.
      * If creation is successful, the browser will be redirected to the 'view' page.

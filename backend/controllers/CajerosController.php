@@ -57,6 +57,19 @@ class CajerosController extends Controller
             'model' => $this->findModel($id),
         ]);
     }
+    
+      public function actionGenPdf($id)
+    {
+      
+         $pdf_content = $this->renderPartial('view_pdf', [
+            'model' => $this->findModel($id),
+        ]);
+        $mpdf = new \Mpdf\Mpdf();
+        $mpdf-> WriteHTML($pdf_content);
+        $mpdf -> Output();
+        exit;
+        
+    }
 
     /**
      * Creates a new Cajeros model.

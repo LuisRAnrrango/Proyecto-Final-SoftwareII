@@ -56,7 +56,20 @@ class ClienteController extends Controller
             'model' => $this->findModel($id),
         ]);
     }
-
+    
+    
+      public function actionGenPdf($id)
+    {
+      
+         $pdf_content = $this->renderPartial('view-pdf', [
+            'model' => $this->findModel($id),
+        ]);
+        $mpdf = new \Mpdf\Mpdf();
+        $mpdf-> WriteHTML($pdf_content);
+        $mpdf -> Output();
+        exit;
+        
+    }
     /**
      * Creates a new Cliente model.
      * If creation is successful, the browser will be redirected to the 'view' page.

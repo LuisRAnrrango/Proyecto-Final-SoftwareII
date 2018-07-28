@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\Search\DetallefacturaSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Detallefacturas';
+$this->title = 'DETALLE FACTURAS';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="detallefactura-index">
@@ -18,6 +18,8 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a('Create Detallefactura', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
+   
+
     
 
     <?= GridView::widget([

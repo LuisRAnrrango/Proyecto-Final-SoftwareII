@@ -13,6 +13,7 @@ $this->title = 'Detallefacturas';
 <div class="detallefactura-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
+    
    
 
     <?= GridView::widget([
@@ -32,3 +33,4 @@ $this->title = 'Detallefacturas';
      <?= Html::a('Generar PDF', ['gen-pdf'], ['class' => 'btn btn-primary']) ?>
 
 </div>
+
