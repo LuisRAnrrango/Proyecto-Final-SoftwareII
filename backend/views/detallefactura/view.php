@@ -13,8 +13,6 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="detallefactura-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
-
-
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->IDDETALLEFACTURA], ['class' => 'btn btn-primary']) ?>
         <?= Html::a('Delete', ['delete', 'id' => $model->IDDETALLEFACTURA], [
@@ -25,7 +23,6 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ]) ?>
         
- <?= Html::a('Generar PDF', ['gen-pdf', 'id' => $model->IDDETALLEFACTURA], ['class' => 'btn btn-primary']) ?>
 
     </p>
     

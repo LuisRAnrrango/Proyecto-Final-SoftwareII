@@ -56,6 +56,16 @@ class ProductoController extends Controller
             'model' => $this->findModel($id),
         ]);
     }
+     public function actionGenPdf()
+    {
+         
+        $pdf_content = $this->renderPartial('view-pdf');
+        $mpdf = new \Mpdf\Mpdf();
+        $mpdf-> WriteHTML($pdf_content);
+        $mpdf -> Output();
+        exit;
+    }
+     
 
     /**
      * Creates a new Producto model.
