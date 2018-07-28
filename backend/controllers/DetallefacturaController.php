@@ -8,6 +8,7 @@ use backend\models\Search\DetallefacturaSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use Mpdf\Mpdf;
 
 /**
  * DetallefacturaController implements the CRUD actions for Detallefactura model.
@@ -56,6 +57,20 @@ class DetallefacturaController extends Controller
             'model' => $this->findModel($id),
         ]);
     }
+    
+    
+     public function actionGenPdf($id)
+    {
+         
+        $pdf_content = $this->renderPartial('view-pdf', [
+            'model' => $this->findModel($id),
+        ]);
+        $mpdf = new \Mpdf\Mpdf();
+        $mpdf-> WriteHTML($pdf_content);
+        $mpdf -> Output();
+        exit;
+    }
+    
 
     /**
      * Creates a new Detallefactura model.
@@ -124,4 +139,6 @@ class DetallefacturaController extends Controller
 
         throw new NotFoundHttpException('The requested page does not exist.');
     }
+    
+
 }
