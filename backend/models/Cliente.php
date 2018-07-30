@@ -36,11 +36,12 @@ class Cliente extends \yii\db\ActiveRecord
      */
     public function rules()
     {
-        return [
+        return [    
             [['FECHANACIMIENTO'], 'safe'],
+            [['FECHANACIMIENTO'], 'date'],
             [['CEDULARUC', 'TELEFONO'], 'string', 'max' => 10],
             [['NOMBRES', 'APELLIDOS', 'CIUDADNACIMIENTO', 'DIRECCION', 'EMAIL'], 'string', 'max' => 50],
-            [['TIPOCLIENTE', 'ESTADO'], 'string', 'max' => 20],
+            [['TIPOCLIENTE'], 'string', 'max' => 20],
         ];
     }
 
