@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\helpers\Url;
+//use kartik\export\ExportMenu;
 
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\Search\CajerosSearch */
@@ -39,4 +41,32 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
+    
+    <?php 
+    $gridColums = [
+        // 'id'
+          'IDCAJERO',
+            'CEDULARUC',
+            'NOMBRES',
+            'APELLIDOS',
+            'FECHANACIMIENTO',
+            'CIUDADNACIMIENTO',
+            'DIRECCION',
+            'TELEFONO',
+            'EMAIL:email',
+            'ESTADO',
+    ];
+            
+    // Direccionando a export dropDown Menu
+//    
+//    echo ExportMenu::widget([
+//        'dataProvider'=> $dataProvider,
+//        'colums' =>$gridColums
+//    ]);
+    
+    
+    ?>
+    
+    
+    
 </div>

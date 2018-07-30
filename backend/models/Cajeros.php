@@ -49,8 +49,8 @@ class Cajeros extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'IDCAJERO' => 'Código Cajero',
-            'CEDULARUC' => 'Cedula o Ruc',
+            'IDCAJERO' => 'Código',
+            'CEDULARUC' => 'Cédula o Ruc',
             'NOMBRES' => 'Nombres',
             'APELLIDOS' => 'Apellidos',
             'FECHANACIMIENTO' => 'Fecha de Nacimiento',
